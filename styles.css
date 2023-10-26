@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+/* -------------------------  css for whole page --------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Section */
+.header {
+  position: sticky;
+}
+/* ------------------------------- Navbar css -------------------------------- */
+.navbar {
+  background: #131313;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.062745098);
+}
+
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar_menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar_links {
+  color: #a7a7a9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.navbar_btn {
+  border: 0.5rem solid gray;
+}
+
+.navbar_links:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* ---------------------------  2nd cont css ----------------------------------------  */
+.btn {
+  padding: 10px;
+  color: white;
+  border-radius: 0.5em;
+  background-color: #3eb489;
+  width: 150px;
+  font-size: 15px;
+  border: none;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+h2 {
+  font-size: 40px;
+}
+
+.bodycont {
+  padding: 4rem 10rem;
+  background-color: #191919;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bodycontcard {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cardcommon {
+  box-shadow: 0 0.7rem 0.8rem rgba(0, 0, 0, 0.2);
+  border: 1px solid hsla(0, 0%, 100%, 0.07);
+  border-radius: 4px;
+  max-width: 38rem;
+  width: 30%;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  margin: 1.6rem 0;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+@media screen and (max-width: 1260px) {
+  .bodycontcard {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardcommon {
+    width: 80%;
+  }
+}
+
+/* 3rd container  CSS*/
+.cont-benift {
+  padding: 4rem 10rem;
+  background-color: #191919;
+  color: white;
+  display: flex;
+
+  gap: 1rem;
+}
+.cont-benift-card {
+  max-width: 38rem;
+  width: 30%;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 1.6rem 0;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+.cont-benift-card-child {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 1260px) {
+  .cont-benift {
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-benift-card {
+    padding: 0;
+    width: 80%;
+  }
+}
