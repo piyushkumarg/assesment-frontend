@@ -1,0 +1,16 @@
+
+
+/*-------- Some common css of earn page present in dashboard.css --------*/
+
+/*-------- Earn page CSS -----------*/
+.default-child-cont.earn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+  .default-child-cont.earn {
+    grid-template-columns: 1fr;
+  }
+}
+

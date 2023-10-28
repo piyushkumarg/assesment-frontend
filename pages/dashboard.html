@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+  <body>
+    <!-- Navbarsection -->
+    <nav class="navbar">
+      <div class="navbar_container">
+         <div class="navbar_container-logo">
+          <img style="width: 3.5rem;" src="../assests/new-logo.png" alt="logo" />
+          <p>Romi.Finance</p>
+        </div>
+
+        <div class="navbar_menu">
+          <div class="navbar_item">
+            <a href="/" class="navbar_links" id="home_page">Home</a>
+          </div>
+          <div class="navbar_item">
+            <a href="./dashboard.html" class="navbar_links" id="Dashboard"
+              >Dashboard</a
+            >
+          </div>
+          <div class="navbar_item">
+            <a href="./earn.html" class="navbar_links" id="Earn">Earn</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- stats section start -->
+    <div class="common-body default-cont">
+      <div class="default-cont-heading">
+        <h1>Stats</h1>
+        <img
+          src="https://zomi.finance/static/media/ic_avalanche_24.4f4088f4.svg"
+          alt="stats"
+        />
+      </div>
+      <div class="default-cont-description">
+        Ethereum Total Stats start from 06 Jan 2022
+        <br />
+        For detailed stats:
+      </div>
+      <div class="default-child-cont" id="stats-desc"></div>
+    </div>
+
+
+    <!------------------- Token section start ---------------------------------------->
+    <div class="common-body default-cont">
+      <div class="default-cont-heading">
+        <h1>Tokens</h1>
+        <img
+          src="https://zomi.finance/static/media/ic_avalanche_24.4f4088f4.svg"
+          alt="stats"
+        />
+      </div>
+      <div class="default-cont-description">
+        Platform and $ZLP index tokens.
+      </div>
+      <div class="default-child-cont id="token-desc ">
+        <div class="default-child-cont-portion view-align">
+          <div class="token-content">
+            <div class="token_heading1">
+              <img class="token_img" src="../assests/token-zomi.png" alt="" />
+              <div class="crypto_name">
+                <div>$ZOMI</div>
+                <p>$ZOMI</p>
+              </div>
+            </div>
+            <div class="blank_div"></div>
+            <div class="default-child-cont-portion-desc">
+              <div class="default-child-cont-portion-desc-area">
+                <div style="color: #a9a9b0">Price</div>
+                <div>$0.00</div>
+              </div>
+              <div class="default-child-cont-portion-desc-area">
+                <div style="color: #a9a9b0">Supply</div>
+                <div>10,000 $ZOMI</div>
+              </div>
+              <div class="default-child-cont-portion-desc-area">
+                <div style="color: #a9a9b0">Total Staked</div>
+                <div>$0</div>
+              </div>
+              <div class="default-child-cont-portion-desc-area">
+                <div style="color: #a9a9b0">Market Cap</div>
+                <div>$10</div>
+              </div>
+            </div>
+          </div>
+          <div class="chart-display">
+            <canvas id="myChart"></canvas>
+            <div class="center_txt">Distribution</div>
+          </div>
+        </div>
+        <div class="default-child-cont-portion  view-align">
+          <div class="token-content">
+            <div class="token_heading1">
+              <img class="token_img" src="../assests/token-zlp.png" alt="" />
+              <div class="crypto_name">
+                <div>$ZLP</div>
+                <p>$ZLP</p>
+              </div>
+            </div>
+            <div class="blank_div"></div>
+            <div class="default-child-cont-portion-desc">
+              <div class="default-child-cont-portion-desc-area">
+                <div style="color: #a9a9b0">Price</div>
+                <div>$1.136</div>
+              </div>
+              <div class="default-child-cont-portion-desc-area">
+                <div style="color: #a9a9b0">Supply</div>
+                <div>29 $ZLP</div>
+              </div>
+              <div class="default-child-cont-portion-desc-area">
+                <div style="color: #a9a9b0">Total Staked</div>
+                <div>$34</div>
+              </div>
+              <div class="default-child-cont-portion-desc-area">
+                <div style="color: #a9a9b0">Market Cap</div>
+                <div>$34</div>
+              </div>
+              <div class="default-child-cont-portion-desc-area">
+                <div style="color: #a9a9b0">Stablecoin Percentage</div>
+                <div>49.50%</div>
+              </div>
+            </div>
+          </div>
+          <div class="chart-display">
+            <canvas id="myChart2"></canvas>
+             <div class="center_txt">$ZLP Pool</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <!-------------------- Index compostion section starts --------------------------->
+    <div class="section common-body third-first-part">
+      <div class="third_section-cont">
+        <div class="composition_heading">
+          <div>$ZLP Index Composition</div>
+          <img
+            src="https://zomi.finance/static/media/ic_avalanche_24.4f4088f4.svg"
+            alt="stats"
+          />
+        </div>
+        <div class="blank_div"></div>
+
+        <table class="table">
+          <thead class="table_head">
+            <tr class="head_content">
+              <th class="head_content_child">TOKEN</th>
+              <th class="head_content_child">PRICE</th>
+              <th class="head_content_child">POOL</th>
+              <th class="head_content_child">WEIGHT</th>
+              <th class="utilization">UTILIZATION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="head_content_child">
+                <div class="crypto_detail">
+                  <img
+                    src="https://zomi.finance/static/media/ic_eth_40.5e255508.svg"
+                    alt=""
+                  />
+                  <div class="crypto_name">
+                    <div>Ethereum</div>
+                    <p>ETH</p>
+                  </div>
+                </div>
+              </td>
+              <td class="head_content_child">$1,782.37</td>
+              <td class="head_content_child">$19</td>
+              <td class="head_content_child">50.49% / 25.00%</td>
+              <td class="utilization">0.00%</td>
+            </tr>
+
+            <tr>
+              <td class="head_content_child">
+                <div class="crypto_detail">
+                  <img
+                    src="https://zomi.finance/static/media/ic_wbtc_40.8330ef8d.svg"
+                    alt=""
+                  />
+                  <div class="crypto_name">
+                    <div>Wrapped Bitcoin</div>
+                    <p>WBTC</p>
+                  </div>
+                </div>
+              </td>
+              <td class="head_content_child">$1,782.37</td>
+              <td class="head_content_child">$19</td>
+              <td class="head_content_child">50.49% / 25.00%</td>
+              <td class="utilization">0.00%</td>
+            </tr>
+
+            <tr>
+              <td class="head_content_child">
+                <div class="crypto_detail">
+                  <img
+                    src="https://zomi.finance/static/media/ic_ape_40.53ac41f3.svg"
+                    alt=""
+                  />
+                  <div class="crypto_name">
+                    <div>ApeCoin</div>
+                    <p>APE</p>
+                  </div>
+                </div>
+              </td>
+              <td class="head_content_child">$1,782.37</td>
+              <td class="head_content_child">$19</td>
+              <td class="head_content_child">50.49% / 25.00%</td>
+              <td class="utilization">0.00%</td>
+            </tr>
+
+            <tr>
+              <td class="head_content_child">
+                <div class="crypto_detail">
+                  <img
+                    src="https://zomi.finance/static/media/ic_usdc_40.27f415ba.svg"
+                    alt=""
+                  />
+                  <div class="crypto_name">
+                    <div>USD Coin</div>
+                    <p>USDC</p>
+                  </div>
+                </div>
+              </td>
+              <td class="head_content_child">$1,782.37</td>
+              <td class="head_content_child">$19</td>
+              <td class="head_content_child">50.49% / 25.00%</td>
+              <td class="utilization">0.00%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+    <!--------------------------------  Index compostion section for smaller screen  ----------------------->
+    <div class="common-body third-second-part">
+      <div class="default-child-cont earn" id="zlp-index"></div>
+    </div>
+    <!-------------------------  footer section ---------------------------------->
+    <footer class="footer-cont">
+      <div class="footer-logo"><img src="../assests/new-logo.png" alt="" /></div>
+      <div class="footer-social-link-block">
+        <a class="footer-social-link" href="#" target="_blank"
+          ><img
+            src="https://zomi.finance/static/media/ic_twitter.9f35b403.svg"
+            alt="Twitter" /></a
+        ><a class="footer-social-link" href="#" target="_blank"
+          ><img
+            src="https://zomi.finance/static/media/ic_medium.f6051b2e.svg"
+            alt="Medium" /></a
+        ><a class="footer-social-link" href="#" target="_blank"
+          ><img
+            src="https://zomi.finance/static/media/ic_github.dbd4de8a.svg"
+            alt="Github" /></a
+        ><a class="footer-social-link" href="#" target="_blank"
+          ><img
+            src="https://zomi.finance/static/media/ic_telegram.af1a4a66.svg"
+            alt="Telegram" /></a
+        ><a class="footer-social-link" href="#" target="_blank"
+          ><img
+            class="img-hover"
+            src="https://zomi.finance/static/media/ic_discord.be4d716c.svg"
+            alt="Discord"
+        /></a>
+      </div>
+      <div class="footer-links">
+        <a class="footer-link" href="#/terms-and-conditions"
+          >Terms and Conditions</a
+        ><a class="footer-link" href="#/referral-terms">Referral Terms</a
+        ><a target="_blank" href="https://docs.zomi.finance" class="footer-link"
+          >Media Kit</a
+        >
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="./js/dashboard.js"></script>
+</html>
