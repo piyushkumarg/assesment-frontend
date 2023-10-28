@@ -110,6 +110,9 @@
   .token-content {
     width: 50%;
   }
+  .default-child-cont-portion-desc-area {
+    font-size: 1rem;
+  }
 }
 
 /* --------------------------- index compostion or third section start  ------------------ */
