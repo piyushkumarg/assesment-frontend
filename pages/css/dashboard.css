@@ -106,6 +106,12 @@
   font-size: 1rem;
 }
 
+@media screen and (max-width: 500px) {
+  .token-content {
+    width: 50%;
+  }
+}
+
 /* --------------------------- index compostion or third section start  ------------------ */
 
 .third_section-cont {
